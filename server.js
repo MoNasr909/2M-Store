@@ -945,7 +945,7 @@ app.post(
             governorate,
             area,
             address,
-            hash
+            password
           ]
         );
 
@@ -2485,13 +2485,13 @@ async function startServer() {
 
     await initializeDatabase();
 
-
     app.listen(
       PORT,
+      '0.0.0.0',
       () => {
 
         console.log(
-          `2M Store running on http://localhost:${PORT}`
+          `2M Store running on port ${PORT}`
         );
 
         console.log(
@@ -2516,6 +2516,5 @@ async function startServer() {
   }
 
 }
-
 
 startServer();
