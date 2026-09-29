@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2M Store — premium watches and signature perfumes">
+  <title>2M Store | Watches & Perfumes</title>
+  <link rel="icon" href="/assets/logo.svg">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <div id="toast"></div>
+
+  <header class="header">
+
+    <a class="brand" href="#/">
+      <img src="/assets/logo.svg" alt="2M Store">
+    </a>
+
+    <nav>
+      <a href="#/">Home</a>
+      <a href="#/shop">Shop</a>
+      <a href="#/watches">Watches</a>
+      <a href="#/perfumes">Perfumes</a>
+      <a href="#/about">About</a>
+      <a href="#/contact">Contact</a>
+      <a href="#/admin">Admin</a>
+    </nav>
+
+    <div class="head-actions">
+      <button class="icon-btn" onclick="openSearch()">⌕</button>
+
+      <a class="icon-btn" href="#/account">♙</a>
+
+      <a class="cart-btn" href="#/cart">
+        🛒
+        <span id="cartCount">0</span>
+      </a>
+    </div>
+
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="footer">
+
+    <div class="footer-grid">
+
+      <div>
+        <img src="/assets/logo.svg" class="footer-logo">
+        <p>
+          Watches & Perfumes<br>
+          More than just a product.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#/">Home</a>
+        <a href="#/shop">Shop</a>
+        <a href="#/watches">Watches</a>
+        <a href="#/perfumes">Perfumes</a>
+        <a href="#/about">About Us</a>
+        <a href="#/contact">Contact</a>
+        <a href="#/admin">Admin</a>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+
+        <a href="tel:01280765582">
+          ☎ 01280765582
+        </a>
+
+        <a href="https://wa.me/201280765582" target="_blank">
+          ◉ WhatsApp
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61584806522383" target="_blank">
+          f Facebook Page
+        </a>
+
+        <span>⌖ Egypt</span>
+      </div>
+
+      <div>
+
+        <h4>Follow Us</h4>
+
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=61584806522383" target="_blank">f</a>
+          <a href="#/contact">◎</a>
+          <a href="#/contact">♪</a>
+          <a href="#/contact">▶</a>
+        </div>
+
+        <small>
+          © 2026 2M Store. All rights reserved.
+        </small>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <dialog id="searchDialog">
+
+    <form method="dialog" class="search-modal">
+
+      <button class="close" value="cancel">×</button>
+
+      <h2>Search 2M Store</h2>
+
+      <input
+        id="searchInput"
+        placeholder="Search watches, perfumes..."
+        autofocus
+      >
+
+      <button
+        class="gold-btn"
+        type="button"
+        onclick="runSearch()"
+      >
+        Search
+      </button>
+
+    </form>
+
+  </dialog>
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
